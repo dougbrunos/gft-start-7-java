@@ -31,7 +31,7 @@ public class CatalogoLivros {
         List<Livro> livrosPorIntervalosAnos = new ArrayList<>();
         if(!livroList.isEmpty()) {
             for(Livro l : livroList) {
-                if(l.getAnoPublicacao() >= anoFinal && l.getAnoPublicacao() <= anoFinal) {
+                if(l.getAnoPublicacao() >= anoInicial && l.getAnoPublicacao() <= anoFinal) {
                     livrosPorIntervalosAnos.add(l);
                 }
             }
